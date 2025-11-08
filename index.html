@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashif Hussain Koduru — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Ashif Hussain Koduru — Civil Engineer, AutoCAD & BIM designer." />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Ashif Koduru</div>
+      <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <h1>Hello — I'm <span class="accent">Ashif Hussain</span></h1>
+      <p class="lead">Civil Engineer • AutoCAD Designer • BIM Enthusiast</p>
+      <a class="btn" href="#projects">See my work</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm a Civil Engineer focused on turning concepts into construction-ready drawings.
+        I specialize in AutoCAD (2D & 3D), basic BIM workflows, and quantity estimation.
+        I enjoy efficient structural layouts and clear construction documentation.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>AutoCAD (2D & 3D)</li>
+        <li>Revit (BIM basics)</li>
+        <li>Quantity Estimation & BOQ</li>
+        <li>SketchUp & Visualization</li>
+        <li>MS Excel</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="muted">Click a project to view details (image, short description, and external links).</p>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <img src="images/project-residential.jpg" alt="Residential Building Design" loading="lazy" />
+          <div class="card-body">
+            <h3>Residential Building Design</h3>
+            <p>3-floor residential building plans, elevations, and structural detailing prepared in AutoCAD.</p>
+            <div class="card-actions">
+              <a class="link" href="images/project-residential.jpg" target="_blank" rel="noopener">View image</a>
+              <a class="link" href="#" target="_blank" rel="noopener">More (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <img src="images/project-college.jpg" alt="College Block Layout" loading="lazy" />
+          <div class="card-body">
+            <h3>College Block Layout</h3>
+            <p>Architectural and MEP layout for a college building with space planning and utilities.</p>
+            <div class="card-actions">
+              <a class="link" href="images/project-college.jpg" target="_blank" rel="noopener">View image</a>
+              <a class="link" href="#" target="_blank" rel="noopener">More (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <img src="images/project-road.jpg" alt="Road & Drainage Detail" loading="lazy" />
+          <div class="card-body">
+            <h3>Road & Drainage Detail</h3>
+            <p>Site grading, road alignment and drainage details with cross-sections drawn in AutoCAD.</p>
+            <div class="card-actions">
+              <a class="link" href="images/project-road.jpg" target="_blank" rel="noopener">View image</a>
+              <a class="link" href="#" target="_blank" rel="noopener">More (PDF)</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>If you'd like to work with me or view CAD files, reach out:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:ashifhussain@example.com">ashifhussain@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/ashifhussain</a></li>
+      </ul>
+      <p class="muted small">Tip: Add a link to a Google Drive or Dropbox folder for large DWG/PDF files.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ashif Hussain Koduru — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small JS for mobile nav and current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
